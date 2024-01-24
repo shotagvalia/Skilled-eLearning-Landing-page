@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-image: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+}
+
+button {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.start {
+  border-radius: 28px;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  padding: 9px 24px 11px;
+}
+
+.start:hover {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 114px;
+  padding: 16px 16px 0;
+}
+
+header h2 {
+  color: #13183f;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+header button {
+  background: #13183f;
+}
+
+header button:hover {
+  background: #666ca3;
+}
+
+main {
+  padding: 0 16px;
+  width: 343px;
+  margin: 38px auto 80px;
+}
+
+h1 {
+  color: #13183f;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.details {
+  color: #83869a;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 26px;
+}
+
+.general button {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  padding: 15px 37px;
+  margin-top: 24px;
+}
+
+.general button:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+
+.hero-img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.popular {
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  padding: 24px 29px 32px 28px;
+  color: #fff;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32px;
+}
+
+.course {
+  padding: 56px 29px 32px 28px;
+  position: relative;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+
+.course img {
+  position: absolute;
+  top: -28px;
+  /* transform: translateY(-150%); */
+}
+
+.course h2 {
+  color: #13183f;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.course p {
+  color: #83869a;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  margin-top: 16px;
+}
+
+.course button {
+  all: unset;
+  color: #f74780;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  margin-top: 16px;
+}
+
+.course button:hover {
+  cursor: pointer;
+  color: #ffa7c3;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 114px;
+  padding: 36px 16px;
+  background: #13183f;
+}
+
+footer h2 {
+  color: #fff;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+footer button {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+}
+
+footer button:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url(./assets/image-hero-tablet.png),
+      linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right -280px top -80px;
+  }
+
+  header {
+    padding: 24px 39px 0;
+  }
+
+  main {
+    width: 688px;
+    padding: 0 39px;
+    margin-bottom: 86px;
+  }
+
+  .general {
+    width: 398px;
+    margin-top: 105px;
+  }
+
+  .hero-img {
+    display: none;
+  }
+
+  .wrapper {
+    margin-top: 210px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 56px 10px;
+  }
+
+  .popular h2 {
+    width: 286px;
+  }
+
+  .popular {
+    padding: 56px 21px 139px 32px;
+  }
+
+  .course {
+    width: 339px;
+  }
+
+  footer {
+    padding: 36px 39px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    background-image: url(./assets/image-hero-desktop.png),
+      linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right -300px top -120px;
+  }
+
+  header {
+    padding: 24px 165px;
+  }
+
+  main {
+    width: 1110px;
+    padding: 0 165px;
+  }
+
+  .general {
+    width: 457px;
+    margin-top: 178px;
+  }
+
+  .general h1 {
+    font-size: 5.6rem;
+  }
+
+  .general p {
+    font-size: 1.8rem;
+  }
+
+  .start {
+    font-size: 1.8rem;
+  }
+
+  .wrapper {
+    margin-top: 250px;
+    gap: 80px 46.5px;
+  }
+
+  footer {
+    padding: 32px 165px;
+  }
+}
